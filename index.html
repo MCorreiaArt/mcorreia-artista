@@ -3,152 +3,343 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="M. Correia — Artista Plástica. Pintura, escultura, técnicas mistas e artes decorativas.">
+
+  <meta name="description" content="M. Correia — Artista Plástica. Pintura, técnicas mistas, desenho e artes decorativas.">
+
   <title>M. Correia, Artista Plástica</title>
+
   <style>
     :root {
-      --ink: #2f2f2f;
-      --muted: #666;
-      --paper: #fbfaf7;
+      --ink: #30302e;
+      --muted: #706e69;
+      --paper: #faf8f3;
       --card: #ffffff;
-      --line: #e7e1d8;
+      --line: #e7e0d6;
       --orange: #f47721;
-      --blue: #b9d0e5;
     }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       background: var(--paper);
       color: var(--ink);
       font-family: Georgia, "Times New Roman", serif;
-      line-height: 1.7;
+      line-height: 1.72;
     }
+
     .topo {
       width: 100%;
-      height: 74px;
+      height: 76px;
       object-fit: cover;
       object-position: center;
       display: block;
     }
+
     main {
-      width: min(720px, calc(100% - 32px));
+      width: min(720px, calc(100% - 28px));
       margin: 0 auto;
-      padding: 42px 0 56px;
+      padding: 44px 0 58px;
     }
+
     header {
       text-align: center;
       margin-bottom: 30px;
     }
+
     h1 {
-      margin: 0 0 10px;
-      font-size: clamp(2rem, 7vw, 3rem);
-      line-height: 1.15;
+      margin: 0 0 9px;
+      font-size: clamp(2.05rem, 7vw, 3rem);
+      line-height: 1.12;
       font-weight: 500;
-      letter-spacing: -0.02em;
+      letter-spacing: -0.025em;
     }
+
     .subtitulo {
       margin: 0;
       color: var(--muted);
       font-family: Arial, Helvetica, sans-serif;
-      font-size: .95rem;
-      letter-spacing: .04em;
+      font-size: 0.82rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
     }
+
+    .intro {
+      text-align: center;
+      color: #5e5c58;
+      max-width: 590px;
+      margin: 0 auto 30px;
+      font-size: 1.03rem;
+    }
+
     .links {
       display: grid;
-      gap: 11px;
-      margin: 28px 0 42px;
+      gap: 12px;
+      margin: 0 auto 46px;
+      max-width: 560px;
     }
+
     .links a {
-      display: block;
-      padding: 14px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 54px;
+      padding: 13px 18px;
       border: 1px solid var(--line);
-      border-radius: 10px;
+      border-radius: 11px;
       background: var(--card);
       color: var(--ink);
       text-decoration: none;
       text-align: center;
       font-family: Arial, Helvetica, sans-serif;
       font-weight: 600;
-      transition: transform .15s ease, box-shadow .15s ease;
+      letter-spacing: 0.01em;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
     }
+
     .links a:hover {
       transform: translateY(-1px);
-      box-shadow: 0 5px 18px rgba(0,0,0,.06);
+      box-shadow: 0 7px 20px rgba(0, 0, 0, 0.06);
     }
+
     .links a.destaque {
       border-color: var(--orange);
     }
+
     section {
       background: var(--card);
       border: 1px solid var(--line);
-      border-radius: 14px;
-      padding: clamp(22px, 5vw, 34px);
+      border-radius: 15px;
+      padding: clamp(23px, 5vw, 36px);
+      box-shadow: 0 5px 24px rgba(54, 45, 35, 0.035);
+      scroll-margin-top: 20px;
     }
+
+    .secao-label {
+      margin: 0 0 6px;
+      color: var(--orange);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
     h2 {
-      margin: 0 0 20px;
-      font-size: 1.55rem;
+      margin: 0 0 22px;
+      font-size: 1.62rem;
       font-weight: 500;
+      line-height: 1.2;
     }
-    p { margin: 0 0 1.15em; }
-    p:last-child { margin-bottom: 0; }
-    .lista-locais {
-      padding-left: 1.2em;
-      margin: 0;
+
+    p {
+      margin: 0 0 1.15em;
     }
-    .lista-locais li { margin-bottom: .45em; }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
     footer {
       text-align: center;
-      color: #888;
+      color: #99958e;
       font-family: Arial, Helvetica, sans-serif;
-      font-size: .78rem;
+      font-size: 0.76rem;
       margin-top: 25px;
     }
+
     @media (max-width: 480px) {
-      main { width: min(100% - 22px, 720px); padding-top: 30px; }
-      .topo { height: 58px; }
-      section { border-radius: 11px; padding: 20px; }
+      .topo {
+        height: 59px;
+      }
+
+      main {
+        padding-top: 31px;
+      }
+
+      .subtitulo {
+        font-size: 0.70rem;
+      }
+
+      .intro {
+        font-size: 0.98rem;
+      }
+
+      section {
+        border-radius: 12px;
+        padding: 21px;
+      }
     }
   </style>
 </head>
+
 <body>
+
   <img class="topo" src="topo.png" alt="" aria-hidden="true">
 
   <main>
+
     <header>
       <h1>M. Correia, Artista Plástica</h1>
-      <p class="subtitulo">Pintura · Escultura · Técnicas mistas · Artes decorativas</p>
+
+      <p class="subtitulo">
+        Pintura · Técnicas mistas · Desenho · Artes decorativas
+      </p>
     </header>
 
-    <nav class="links" aria-label="Ligações">
-      <a href="https://www.facebook.com/mcorreia.art" target="_blank" rel="noopener">Facebook</a>
-      <a href="https://www.instagram.com/mcorreia.art" target="_blank" rel="noopener">Instagram</a>
-      <a class="destaque" href="#biografia">Breve biografia</a>
+    <p class="intro">
+      Um percurso artístico marcado pela pintura, pela experimentação e pela procura
+      de diferentes formas de expressão, com uma ligação especial à cultura e às artes e ofícios.
+    </p>
+
+    <nav class="links" aria-label="Acessos">
+
+      <a
+        href="https://www.facebook.com/mcorreia.art"
+        target="_blank"
+        rel="noopener"
+      >
+        Facebook
+      </a>
+
+      <a
+        href="https://www.instagram.com/mcorreia.art"
+        target="_blank"
+        rel="noopener"
+      >
+        Instagram
+      </a>
+
+      <a
+        class="destaque"
+        href="#biografia"
+      >
+        Conheça o percurso artístico
+      </a>
+
     </nav>
 
     <section id="biografia">
-      <h2>Breve biografia</h2>
 
-      <p>M. Correia nasceu no Porto, em julho de 1963, e viveu a infância na Guiné-Bissau, em África. O contacto com essa cultura despertou-lhe um profundo fascínio, que viria a influenciar muitos dos seus trabalhos.</p>
+      <p class="secao-label">
+        Percurso
+      </p>
 
-      <p>Atualmente vive em Vieira de Leiria. Formou-se na Escola Artística de Soares dos Reis, no Porto, e na Escola Superior de Educação de Leiria. É professora na área das artes visuais desde 1984, tendo lecionado Educação Visual e Tecnológica, Desenho e Artes Decorativas.</p>
+      <h2>
+        Breve biografia
+      </h2>
 
-      <p>Começou a expor ainda muito jovem, participando em exposições coletivas e individuais de pintura e escultura. Ao longo do seu percurso, colaborou também na ilustração de livros de poesia, contos e lendas, bem como em projetos de ilustração publicitária.</p>
+      <p>
+        Manuela Correia nasceu no Porto, em julho de 1963, e viveu a sua infância
+        na Guiné-Bissau, em África. O contacto com essa cultura despertou-lhe um
+        profundo fascínio, que viria a influenciar muitos dos seus trabalhos e a
+        marcar o seu percurso artístico.
+      </p>
 
-      <p>Com uma forte ligação às artes e aos ofícios, sempre cultivou curiosidade e interesse pela olaria, cerâmica e tecelagem, áreas em que realizou também alguns trabalhos.</p>
+      <p>
+        Atualmente vive em Vieira de Leiria. Frequentou a Escola Artística de
+        Soares dos Reis, no Porto, e a Escola Superior de Educação de Leiria.
+        É professora na área das artes visuais desde 1984, tendo desenvolvido
+        atividade nas áreas da Educação Visual e Tecnológica, do Desenho e das
+        Artes Decorativas.
+      </p>
 
-      <p>Em cada obra procura colocar a sua paixão e o seu sentimento. O seu percurso artístico passou por diferentes fases, acompanhando diferentes formas de pensamento emocional e criativo. Domina diversas técnicas e materiais de pintura e técnicas mistas, incluindo a utilização de materiais recicláveis.</p>
+      <p>
+        Iniciou a apresentação pública dos seus trabalhos ainda muito jovem,
+        participando em exposições coletivas e individuais de pintura e escultura.
+        Ao longo do seu percurso, colaborou também na ilustração de livros de
+        poesia, contos e lendas, bem como na criação de ilustrações para projetos
+        de carácter publicitário.
+      </p>
 
-      <p>Muitas das suas obras integram atualmente coleções particulares e públicas, em Portugal e no estrangeiro. Participa também em exposições de carácter solidário.</p>
+      <p>
+        Com uma particular apetência pelas artes e pelos ofícios, sempre revelou
+        curiosidade e interesse por diferentes formas de expressão artística,
+        nomeadamente pela olaria, cerâmica e tecelagem, áreas em que realizou
+        também diversos trabalhos.
+      </p>
 
-      <p>Apresentou publicamente os seus trabalhos pela primeira vez aos vinte anos. Desde então, participou em exposições e projetos em diversas instituições e espaços culturais, entre os quais o Ateneu Comercial do Porto, Museu de Serralves, Galeria Quadras Soltas (Porto), Bienal no Castelo de Leiria, Turismo de Leiria, Centro de Artes e Espetáculos, Galeria de Artes/Magenta, Associação de Amizade de Artes Galego-Portuguesa e Hospital Distrital da Figueira da Foz.</p>
+      <p>
+        A sua obra caracteriza-se por uma forte dimensão emocional. Em cada
+        criação procura colocar a sua paixão e o seu sentimento, tendo atravessado,
+        ao longo do percurso artístico, diferentes fases de pensamento e de
+        expressão criativa. Trabalha com diversas técnicas e materiais de pintura
+        e técnicas mistas, explorando também a utilização de materiais recicláveis.
+      </p>
 
-      <p>O seu percurso expositivo inclui ainda espaços em Madrid, Setúbal, S. Brás de Alportel, Vieira de Leiria, Rio Tinto, Caldas da Rainha, Alenquer, Nazaré, Lourinhã, Lisboa, Gondomar e Lamego, bem como exposições virtuais e participações em iniciativas internacionais.</p>
+      <p>
+        A experimentação e a procura de novas possibilidades de expressão têm,
+        assim, um papel importante no seu trabalho, permitindo-lhe cruzar diferentes
+        materiais, técnicas e linguagens visuais.
+      </p>
 
-      <p>Entre os espaços onde as suas obras estiveram expostas contam-se também a Asociación Española de Pintores y Escultores (Madrid), Casa da Cultura de Setúbal, Museu do Traje (S. Brás de Alportel), Galeria Tony Vitorino (Vieira de Leiria), Casa da Cultura Amália Rodrigues (Rio Tinto), Museu do Ciclismo e Galeria Art 4 Family (Caldas da Rainha), Museu Dr. Joaquim Manso (Alenquer), Paço Real/Sítio da Nazaré, Museu da Marinha (Lisboa), Gen's Arte (Gondomar) e Academia de Música Associados Quinto Império (Lamego), entre outros.</p>
+      <p>
+        Muitas das suas obras encontram-se atualmente em coleções particulares
+        e públicas, em Portugal e no estrangeiro. Participa igualmente em
+        exposições de carácter solidário, associando a sua atividade artística
+        a iniciativas de apoio e intervenção na comunidade.
+      </p>
+
+      <p>
+        Ao longo de várias décadas, tem vindo a apresentar o seu trabalho em
+        numerosos espaços culturais e artísticos. Entre as primeiras referências
+        do seu percurso expositivo encontram-se o Ateneu Comercial do Porto,
+        o Museu de Serralves, a Galeria Quadras Soltas, no Porto, a Bienal no
+        Castelo de Leiria, o Turismo de Leiria, o Centro de Artes e Espetáculos
+        e a Galeria de Artes/Magenta.
+      </p>
+
+      <p>
+        O seu percurso inclui ainda participações na Associação de Amizade de
+        Artes Galego-Portuguesa, no Hospital Distrital da Figueira da Foz e na
+        Asociación Española de Pintores y Escultores, em Madrid, bem como
+        exposições na Casa da Cultura de Setúbal e no Museu do Traje, em
+        S. Brás de Alportel, no Algarve.
+      </p>
+
+      <p>
+        Em Vieira de Leiria, apresentou obras na Biblioteca de Instrução Popular
+        e na Galeria Tony Vitorino, tendo participado também em iniciativas na
+        Casa da Cultura Amália Rodrigues, em Rio Tinto, e no âmbito da Artcom
+        Expo International Association of Artists and Partners, incluindo
+        exposições virtuais.
+      </p>
+
+      <p>
+        O seu trabalho esteve igualmente presente na Bienal de Pintura e Escultura
+        Art'Oeste Internacional, nas Caldas da Rainha, bem como no Turismo, no
+        Museu do Ciclismo, na Biblioteca Municipal e na Galeria Art 4 Family,
+        naquela cidade.
+      </p>
+
+      <p>
+        Entre os restantes espaços onde as suas obras foram apresentadas
+        encontram-se o Museu Dr. Joaquim Manso, em Alenquer, o Paço Real/Sítio
+        da Nazaré, o Espaço Sabores, na Lourinhã, a Galeria Ninoiarte, em Lisboa,
+        o Campus da Justiça, em Lisboa, o Museu da Marinha, também em Lisboa,
+        a Gen's Arte, em Gondomar, e a Academia de Música Associados Quinto
+        Império, em Lamego, entre outros.
+      </p>
+
+      <p>
+        O seu percurso artístico e expositivo reflete, assim, uma relação
+        continuada com a criação, a experimentação e a partilha da arte,
+        mantendo uma procura constante de novas formas de expressão.
+      </p>
+
     </section>
 
-    <footer>M. Correia · Artista Plástica</footer>
+    <footer>
+      M. Correia · Artista Plástica
+    </footer>
+
   </main>
+
 </body>
 </html>
