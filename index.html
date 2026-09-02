@@ -146,6 +146,21 @@
       margin-bottom: 0;
     }
 
+    /* Fotografia no final da biografia */
+
+    .foto-artista {
+      margin-top: 36px;
+      text-align: center;
+    }
+
+    .foto-artista img {
+      display: block;
+      width: min(100%, 420px);
+      height: auto;
+      margin: 0 auto;
+      border-radius: 12px;
+    }
+
     footer {
       text-align: center;
       color: #99958e;
@@ -155,6 +170,7 @@
     }
 
     @media (max-width: 480px) {
+
       .topo {
         height: 59px;
       }
@@ -175,39 +191,48 @@
         border-radius: 12px;
         padding: 21px;
       }
-      .foto-artista {
-  margin-top: 34px;
-  text-align: center;
-}
 
-.foto-artista img {
-  width: min(100%, 420px);
-  height: auto;
-  border-radius: 12px;
-  display: inline-block;
-}
+      .foto-artista {
+        margin-top: 30px;
+      }
+
+      .foto-artista img {
+        width: 100%;
+        border-radius: 10px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <img class="topo" src="topo.png" alt="" aria-hidden="true">
+  <img
+    class="topo"
+    src="topo.png"
+    alt=""
+    aria-hidden="true"
+  >
 
   <main>
 
     <header>
-      <h1>M. Correia, Artista Plástica</h1>
+
+      <h1>
+        M. Correia, Artista Plástica
+      </h1>
 
       <p class="subtitulo">
         Pintura · Técnicas mistas · Desenho · Artes decorativas
       </p>
+
     </header>
+
 
     <p class="intro">
       Um percurso artístico marcado pela pintura, pela experimentação e pela procura
       de diferentes formas de expressão, com uma ligação especial à cultura e às artes e ofícios.
     </p>
+
 
     <nav class="links" aria-label="Acessos">
 
@@ -236,6 +261,7 @@
 
     </nav>
 
+
     <section id="biografia">
 
       <p class="secao-label">
@@ -246,12 +272,14 @@
         Breve biografia
       </h2>
 
+
       <p>
         Manuela Correia nasceu no Porto, em julho de 1963, e viveu a sua infância
         na Guiné-Bissau, em África. O contacto com essa cultura despertou-lhe um
         profundo fascínio, que viria a influenciar muitos dos seus trabalhos e a
         marcar o seu percurso artístico.
       </p>
+
 
       <p>
         Atualmente vive em Vieira de Leiria. Frequentou a Escola Artística de
@@ -261,6 +289,7 @@
         Artes Decorativas.
       </p>
 
+
       <p>
         Iniciou a apresentação pública dos seus trabalhos ainda muito jovem,
         participando em exposições coletivas e individuais de pintura e escultura.
@@ -269,12 +298,14 @@
         de carácter publicitário.
       </p>
 
+
       <p>
         Com uma particular apetência pelas artes e pelos ofícios, sempre revelou
         curiosidade e interesse por diferentes formas de expressão artística,
         nomeadamente pela olaria, cerâmica e tecelagem, áreas em que realizou
         também diversos trabalhos.
       </p>
+
 
       <p>
         A sua obra caracteriza-se por uma forte dimensão emocional. Em cada
@@ -284,11 +315,13 @@
         e técnicas mistas, explorando também a utilização de materiais recicláveis.
       </p>
 
+
       <p>
         A experimentação e a procura de novas possibilidades de expressão têm,
         assim, um papel importante no seu trabalho, permitindo-lhe cruzar diferentes
         materiais, técnicas e linguagens visuais.
       </p>
+
 
       <p>
         Muitas das suas obras encontram-se atualmente em coleções particulares
@@ -296,6 +329,7 @@
         exposições de carácter solidário, associando a sua atividade artística
         a iniciativas de apoio e intervenção na comunidade.
       </p>
+
 
       <p>
         Ao longo de várias décadas, tem vindo a apresentar o seu trabalho em
@@ -306,6 +340,7 @@
         e a Galeria de Artes/Magenta.
       </p>
 
+
       <p>
         O seu percurso inclui ainda participações na Associação de Amizade de
         Artes Galego-Portuguesa, no Hospital Distrital da Figueira da Foz e na
@@ -313,6 +348,7 @@
         exposições na Casa da Cultura de Setúbal e no Museu do Traje, em
         S. Brás de Alportel, no Algarve.
       </p>
+
 
       <p>
         Em Vieira de Leiria, apresentou obras na Biblioteca de Instrução Popular
@@ -322,12 +358,14 @@
         exposições virtuais.
       </p>
 
+
       <p>
         O seu trabalho esteve igualmente presente na Bienal de Pintura e Escultura
-        Art'Oeste Internacional, nas Caldas da Rainha, bem como no Turismo, no
-        Museu do Ciclismo, na Biblioteca Municipal e na Galeria Art 4 Family,
+        Art'Oeste Internacional, nas Caldas da Rainha, bem como no Turismo,
+        no Museu do Ciclismo, na Biblioteca Municipal e na Galeria Art 4 Family,
         naquela cidade.
       </p>
+
 
       <p>
         Entre os restantes espaços onde as suas obras foram apresentadas
@@ -338,17 +376,27 @@
         Império, em Lamego, entre outros.
       </p>
 
+
       <p>
         O seu percurso artístico e expositivo reflete, assim, uma relação
         continuada com a criação, a experimentação e a partilha da arte,
         mantendo uma procura constante de novas formas de expressão.
       </p>
-      
-<div class="foto-artista">
-  <img src="foto-mcorreia.jpg" alt="M. Correia, artista plástica">
-</div>
-      
+
+
+      <!-- FOTOGRAFIA DA ARTISTA -->
+
+      <div class="foto-artista">
+
+        <img
+          src="foto-mcorreia.jpg"
+          alt="M. Correia, artista plástica"
+        >
+
+      </div>
+
     </section>
+
 
     <footer>
       M. Correia · Artista Plástica
